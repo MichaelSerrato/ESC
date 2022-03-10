@@ -1,0 +1,33 @@
+#include <linkbot.h>
+
+CLinkbotI rob; 
+CLinkbotI bob; 
+CLinkbotI seinfeld; 
+CLinkbotI rib;
+
+rob.driveDistance(4,2);
+rob.turnLeft(90,2,3.69);
+rob.driveDistance(32,2);
+rob.turnRight(90,2,3.69);
+rob.driveDistance(8.5,2);
+
+bob.turnLeft(90,2,3.69);
+bob.driveDistance(2,2);
+bob.turnRight(90,2,3.69);
+bob.driveDistance(15,2);
+bob.turnRight(90,2,3.69);
+bob.driveDistance(2.5,2);
+
+rib.driveDistance(19,2);
+rib.turnRight(90,2,3.69);
+rib.driveDistance(13.5,2);
+
+seinfeld.driveDistance(6,2);
+seinfeld.turnLeft(90,2,3.69);
+seinfeld.driveDistance(6,2);
+seinfeld.turnRight(90,2,3.69);
+seinfeld.driveDistance(8,2);
+seinfeld.turnRight(90,2,3.69);
+seinfeld.driveDistance(3.5,2);
+seinfeld.turnLeft(90,2,3.69);
+seinfeld.driveDistance(2.5,2);
