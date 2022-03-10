@@ -1,0 +1,22 @@
+def GPAcalc(g,w):
+    if g == "a" or g == "A":
+        return 4 + w
+    elif g == "B" or g == "b":
+        return 3 + w
+    elif g == "C" or g == "c":
+        return 2 + w
+    elif g == "D" or g == "d":
+        return 1 + w
+    elif g == "F" or g == "f":
+        return 0 + w
+    else:
+        return "Invalid"
+    
+grade = input("Enter your letter grade: ")
+    
+weight = int(input("Is it weighted?(1=yes,0=no)"))
+    
+gpa = GPAcalc(grade,weight)
+    
+print("Your GPA score is: " + str(gpa))
+        
