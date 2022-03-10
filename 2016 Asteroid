@@ -1,0 +1,25 @@
+#include <linkbot.h>
+CLinkbotI ash;
+CLinkbotI mike;
+
+ash.setSpeed(1,1);
+ash.driveDistanceNB(37,2);
+
+mike.setSpeed(3,1);
+mike.driveDistance(10,1);
+delay(500);
+mike.turnRight(90,2,3.69);
+delay(500);
+mike.driveDistance(15,2);
+delay(500);
+mike.turnRight(90,2,3.69);
+delay(500);
+mike.driveDistance(10,2);
+delay(500);
+mike.turnRight(90,2,3.69);
+delay(500);
+mike.driveDistance(12,2);
+delay(500);
+mike.turnRight(115 ,2,3.69);
+delay(500);
+mike.driveDistance(20,2);
