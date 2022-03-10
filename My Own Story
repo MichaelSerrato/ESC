@@ -1,0 +1,205 @@
+//variables
+int introChoice, middleChoice1, middleChoice2, middleChoice3;
+string_t name1, name2;
+printf("Enter the name of the characters you want, ");
+printf("Character 1: ");
+scanf("%s", &name1);
+printf("Character 2: ");
+scanf("%s", &name2);
+
+//6 functions
+void intro(){
+    printf(" It was a normal morning for %s he was eating a bowl of cereal \n\
+    preparing to go hang out with his best friend %s .\n\
+    He grabbed his jacket and started heading to %s houses.\n\
+    When he arrived %s was ready and they got driven over to the festival. \n\
+    They were on a ride about to reach the top of the ferris wheel when the ride all of a sudden hit a stop.\n\
+    We heard screams, they sounded to be all around us, we started panicking. \n\
+    There were Zombies! They were everywhere now! They had three options to choose from.\n", name1,name2,name2);
+    printf("Make your choice: \n\
+    1. Stay put and hope someone would come rescue them \n\
+    2. Try climbing down but risk getting bitten or \n\
+    3. Fight the Zombies and try helping as many people as we could. \n"); 
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+void middle1(){
+    printf("you chose middle 1. They decided to stay put. Hopefully somebody would come and \n\
+    safe them before the Zombies realized they were up there. There was one problem \n\
+    that bugged __C__, they had no food. If help didn't come for a long time \n\
+    they would starve. The sun was starting to hit them hard. They had three choices again ");
+    printf("make your end choice: \n\
+    1. Stay put for longer and try not getting noticed. \n\
+    2. send one person down to get food and water, highly risky or \n\
+    3. Try climbing to other peoples boxes to see if they had food or water.\n");
+    scanf("%i", &middleChoice1);
+}
+void middle2(){
+    printf("you chose middle 2. They realized climbing down was there best option if they \n\
+    wanted to get out. They unbuckled there safety belts and started thinking of ways to \n\
+    get down. __N__ was used to climbing since she went rock climbing with her dad every \n\
+    summer. __C__ was scarred of heights and refused to go down. They thought of three plans.");
+    printf("Make your end choice: \n\
+    4.They both Run for the exit but have to fight of some Zombies. \n\
+    5.Go rescue three kids that were surrounded by a mob of Zombies. \n\
+    6.Search for a phone and call for help to come. \n");
+    scanf("%i", &middleChoice2);
+    
+}
+void middle3(){
+    printf("you chose middle 3. They picked the most dangerous option. If they handled it \n\
+    correctly it should go just fine. They reached the bottom after a while of climbing. \n\
+    Immeadiatly they searched for weapons to figt back. __C__ found a thick wooden club, \n\
+    __N__ picked up a long pole. The exit was super close, they could've made it if they ran \n\
+    fast enough and didn't get caught. They had three actions to choose from.");
+    printf("Make your end choice: \n\
+    7. They start fighting Zombies and try finding more people \n\
+    8. Grab a golf cart and try driving to the exit safely \n\
+    9. Try climbing over the fence without getting hurt. \n");
+    scanf("%i", &middleChoice3);
+    
+}
+void end1(){
+    printf("you chose end 1. They decided to stay put for longer. Hopefully no Zombie would \n\
+    spot them and they would be safe. They made sure to be silent and not talk to \n\
+    loud. The sun was starting to beam hard, __C__ and __N__ had lost hope. They \n\
+    had no strength left to climb back down, they could do nothing now. After \n\
+    3 days nobody had came to safe them,they had not had food and water for days it was over.\n\
+    There choices they had picked had led to there doom.");
+    exit (1);
+
+}
+void end2(){
+    printf("you chose end 2. __N__ volunteered to go down by her self. She promised to \n\
+    go down and search for food, she would come right back with plenty. __N__ had \n\
+    reached the bottom, immediatly she spotted the Zombies and ran for cover, a snack \n\
+    shop was right next to her, __N__ got in quickly and locked the door. After grabbing \n\
+    enough supplies she ran for the ferris wheel,and climbed up. They both ate a bunch, \n\
+    after a week they spotted a plane and started yelling for help. They got picked up \n\
+    and flown to safety.");
+    exit (2);
+
+}
+void end3(){
+    printf("you chose end 3. They rembered that there was more people on the ferris wheel, \n\
+    a lot of people had gotten on before the whole Zombie outbreak. They had no food or water \n\
+    so there best bet was to climb over to other peoples boxes. __N__ volunteered to go and \n\
+    ask people for food and water. She spotted a couple 2 crates down and they seemed to \n\
+    have a lot of boxes and bags, they would proably have food to share! She got into there \n\
+    box and the couple was freaked out but was careful not to make to much noise. They \n\
+    gave some food to _N_ and she thanked them and started climbing back up with some \n\
+    fruits and drinks. When she got back to her box, they both dug in and ate well. \n\
+    They would just have to patiently wait for help to come, it could take a while but \n\
+    now they knew where to go get food from.");
+    exit (3);
+
+}
+void end4(){
+    printf("you chose end 4. They decided to run for the exit to try escaping. Their \n\
+    plan was to basically climb down and run for the exit without _C_ or _N_ getting \n\
+    injured or bitten. They both started down, climbing side by side. They hopped of and landed \n\
+    on the concrete ground. They each grabbed two bats that were used for the cricket game. \n\
+    They ran for the exit and saw four Zombies blocking it. They charged head on, swinging \n\
+    the bats straight at them. All four Zombies were taken out nothing would stop them from \n\
+    getting out now. They ran for about 20 minutes non-stop. They spotted a 2-story grey concrete \n\
+    house, they decided they would stay there and set up camp. Inside it was empty, nobody was \n\
+    home. They stayed there in the safety of the big house.");
+    exit (4);
+
+}
+void end5(){
+    printf("you chose end 5. They looked out of their ferris wheel box. There was screams \n\
+    that were heard from everywhere really loudly. _N_ pointed and screamed. Three kids were \n\
+    cornered by a Zombie mob! There was at least ten of the Zombies around them. _N and _C \n\
+    climbed down super quickly, they grabbed anything they could, they had two poles. They \n\
+    sprinted over to the kids aid, they hit the Zombies away from the kids then they ran over \n\
+    to the nearest shop with the three kids and locked themselves in to be safe. The kids \n\
+    weren't badly hurt, they just had a few scratches. After 4 days of waiting for help, \n\
+    a helicopter had came! It took them over to a base that was heavily guarded and protected. \n\
+    Saving the kids had also saved them in return.");
+    exit (5);
+
+}
+void end6(){
+    printf("you chose end 6. Both of them agreed that they would go down and find a phone \n\
+    to call for help. There was telephone poles all around the amusment park. _N_ volunteered \n\
+    to distract the Zombies while _C_ grabbed a telephone and called for help. They executed \n\
+    the mission. When they were on the ground _N_ started screaming loudly and running around \n\
+    to distract. The plan worked a helicopter had been called. They ran to the roof of a shop \n\
+    they waited at the top. They saw the helicopter and started screaming. The helicopter was \n\
+    directly on top of them. They dropped a ladder and then they flew off safely.");
+    exit (6);
+
+}
+void end7(){
+    printf("you chose end 7. They decided that they will stay put and not run. They tightly \n\
+    grabbed there weapons and charged at Zombies. So far they managed to keep them at bay \n\
+    without getting bitten or hurt. They were exhausted. _N_ was regretting picking this \n\
+    option she couldn't go any longer. _C_ was surrouded by at least 30 Zombies she ran to \n\
+    him but now both of them were surrounded by a horde to big to fight off. They were bitten \n\
+    and they failed to get out.");
+    exit (7);
+}
+void end8(){
+    printf("you chose end 8. They spotted a golf cart a few blocks away from them. _C_ and \n\
+    _N_ agreed they should try driving it to the exit. They climbed on it and it luckily turned \n\
+    on. They hit the gas and drove to the exit. They made it out and just kept driving.");
+    exit (8);
+
+}
+void end9(){
+    printf("you chose end 9. _C_ remembered that the festival had a bunch of walls all \n\
+    around it. They ran over and decided to give it a shot. _C_ put his hand so that \n\
+    _N_ could climb up and get over the fence. She was at the top and put her hand out \n\
+    _N_ started up and they both made it over. They ran and found a big grocery store. Staying \n\
+    in there was there safest bet, they had food, water and a shelter.");
+    exit (9);
+
+}
+
+
+
+
+int main(){  //main program to run (logic)
+    intro();
+    if(introChoice == 1){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if(middleChoice1 == 3){
+            end3();
+        }
+    }
+
+    if(introChoice == 2){
+        middle2();
+        if(middleChoice2 == 4){
+            end4();
+        }
+        if(middleChoice2 == 5){
+            end5();
+        }
+        if(middleChoice2 == 6){
+            end6();
+        }
+    }
+    if(introChoice == 3){
+        middle3();
+        if(middleChoice3 == 7){
+            end7();
+        }
+        if(middleChoice3 == 8){
+            end8();
+        }
+        if(middleChoice3 == 9){
+            end9();
+        }
+    }
+}
