@@ -1,0 +1,19 @@
+def piggy():
+    print("This little piggy", end = " ")
+    
+def wee():
+    print("wee ", end= " ")
+    
+#Main
+piggy()
+print("went to market.")
+piggy()
+print("stayed home.")
+piggy()
+print("had roast beef.")
+piggy()
+print("had none.")
+piggy()
+for i in range(4):
+    wee()
+print("all the way home.")
